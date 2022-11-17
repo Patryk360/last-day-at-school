@@ -25,7 +25,10 @@ public class Player : MonoBehaviour
         {
             transform.position +=  Vector3.right * speedPlayer;
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.position +=  Vector3.up * speedPlayer;
+        }
         transform.Rotate(moveY, moveX, 0);
     }
 }
